@@ -17,9 +17,9 @@ class StudentController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($email, $password, $fname, $lname)
 	{
-		//
+		DB::insert('insert into students (email, password, first_name, last_name) values (?, ?, ?, ?)', array($email, $password, $fname, $lname));
 	}
 
 	/**
@@ -49,9 +49,17 @@ class StudentController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($id, $act, $sat, $gpa)
 	{
-		//
+		if($act){
+			DB::update('update students set ACT = ? where id = ?', array($act, $id));
+		}
+		if($sat){
+			DB::update('update students set SAT = ? where id = ?', array($sat, $id));
+		}
+		if($gpa){
+			DB::update('update students set GPA = ? where id = ?', array($gpa, $id));
+		}
 	}
 
 	/**
