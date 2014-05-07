@@ -41,7 +41,7 @@
 					<li><a href="/contact">Contact</a></li>
 					<li>
 						<img class="img-thumbnail" style="height:auto; width:auto; max-width:50px; max-height:50px;" src="/img/q.jpg">
-						<font class="userfont">John Doe</font>
+						<font class="userfont"> {{ $data['user']->first_name }} {{ $data['user']->last_name }} </font>
 					</li>
 				  </ul>	  
 			</div><!--/.navbar-collapse -->
@@ -100,7 +100,7 @@
 
     </div>
     </div><!-- end of jumbotron-->
-
+    <?php print_r($data); ?>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>

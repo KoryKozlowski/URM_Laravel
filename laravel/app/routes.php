@@ -14,8 +14,13 @@
 // The student resource run ./artisan routes to see what 
 // routes this makes.
 Route::get('student/dash', array('before' => 'auth|student', 'uses' => 'StudentsController@dash'));
+Route::get('student/edit', array('before' => 'auth|student', 'uses' => 'StudentsController@edit'));
 Route::resource('student', 'StudentsController');
 
+
+// User routes
+Route::get('password', array('before' => 'auth', 'uses' => 'UsersController@password'));
+Route::get('dashboard', array('before' => 'auth', 'uses' => 'UsersController@dashboard'));
 // Authentication
 Route::post('login', 'SessionsController@store');
 Route::get('login', 'SessionsController@create');

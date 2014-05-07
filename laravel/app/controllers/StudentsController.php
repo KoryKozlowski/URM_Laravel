@@ -45,8 +45,12 @@ class StudentsController extends \BaseController {
   public function dash()
   {
 		$student = Student::findOrFail(Auth::user()->role_id);
-
-    return View::make('students.dash', compact('student'));
+        $user = User::findOrFail(Auth::user()->email);
+        $data = [
+            'student' => $student,
+            'user'    => $user
+        ];
+    return View::make('students.dash')->with('data', $data);
   }
 
 	/**
