@@ -21,32 +21,31 @@ class StudentsController extends \BaseController {
 	{
     $student = new Student;
     $student->verified = false;
-    $student->save(); 
-    
+    $student->save();
+
     User::create([
       'first_name' => Input::get('first_name'),
       'last_name'  => Input::get('last_name'),
       'email'      => Input::get('email'),
       'password'   => Hash::make(Input::get('password')),
       'role'       => 1,
-      'role_id'    => $student->id 
+      'role_id'    => $student->id
     ]);
-    
-    // send them to their dashboard 
-		return Redirect::route('students.dash');
+
+    // send them to their dashboard
+		return Redirect::to('students/dash');
 	}
-  
+
 
   /**
    * Display the student dashboard
    *
-   * @param int $id
    * @return response
    */
-  public function dash($id)
+  public function dash()
   {
-		$student = Student::findOrFail($id);
-    
+		$student = Student::findOrFail(Auth::user()->role_id);
+
     return View::make('students.dash', compact('student'));
   }
 

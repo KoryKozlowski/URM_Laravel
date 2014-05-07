@@ -7,17 +7,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico">
-	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="icon" type="image/png" href="img/favicon/favicon.ico">
+	<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+	<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="/img/favicon/favicon.ico">
     <title>URM</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="css/sidebar.css" rel="stylesheet">
-	<link href="css/todo-list.css" rel="stylesheet">
+    <link href="/css/sidebar.css" rel="stylesheet">
+	<link href="/css/todo-list.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,17 +30,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-			  <a class="navbar-brand" href="student-dash.html"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
+			  <a class="navbar-brand" href="/student-dash.html"><img src="/img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				 <ul class="nav navbar-nav navbar-right">
-					<li><a href="about">About Us</a></li>
-					<li><a href="student">Student</a></li>
-					<li><a href="counselor">High School Counselor</a></li>
-					<li><a href="university">Universities and Colleges</a></li>
-					<li><a href="contact">Contact</a></li>
+					<li><a href="/about">About Us</a></li>
+					<li><a href="/student">Student</a></li>
+					<li><a href="/counselor">High School Counselor</a></li>
+					<li><a href="/university">Universities and Colleges</a></li>
+					<li><a href="/contact">Contact</a></li>
 					<li>
-						<img class="img-thumbnail" style="height:auto; width:auto; max-width:50px; max-height:50px;" src="img/q.jpg">
+						<img class="img-thumbnail" style="height:auto; width:auto; max-width:50px; max-height:50px;" src="/img/q.jpg">
 						<font class="userfont">John Doe</font>
 					</li>
 				  </ul>	  
@@ -56,14 +56,14 @@
                 <li class="sidebar-brand">
 				</li>
 				<br>
-                <li class="active"><a href="dash"><i class="fa fa-lg fa-fw fa-home" id="icon"></i>Home</font></a></li>
-				<li><a href="student-inbox.html"><i class="fa fa-lg fa-fw fa-inbox" id="icon"></i> Inbox</font></a></li>
-				<li><a href="student-vprofile.html"><i class="fa fa-lg fa-fw fa-picture-o" id="icon"></i>View Profile</font></a></li>
-				<li><a href="student-eprofile.html"><i class="fa fa-lg fa-fw fa-pencil-square-o" id="icon"></i>Edit Profile</font></a></li>
-				<li><a href="student-addg.html"><i class="fa fa-lg fa-fw fa-check" id="icon"></i>Add Grades</font></a></li>
-				<li><a href="student-drop.html"><i class="fa fa-lg fa-fw fa-cloud-upload" id="icon"></i>Upload Documents</font></a></li>
-				<li><a href="student-search.html"><i class="fa fa-lg fa-fw fa-search" id="icon"></i>Search for Schools</font></a></li>
-				<li><a href="student-epass.html"><i class="fa fa-lg fa-fw fa-lock" id="icon"></i>Change Password</font></a></li>
+                <li class="active"><a href="/dash"><i class="fa fa-lg fa-fw fa-home" id="icon"></i>Home</font></a></li>
+				<li><a href="/student-inbox.html"><i class="fa fa-lg fa-fw fa-inbox" id="icon"></i> Inbox</font></a></li>
+				<li><a href="/student-vprofile.html"><i class="fa fa-lg fa-fw fa-picture-o" id="icon"></i>View Profile</font></a></li>
+				<li><a href="/student-eprofile.html"><i class="fa fa-lg fa-fw fa-pencil-square-o" id="icon"></i>Edit Profile</font></a></li>
+				<li><a href="/student-addg.html"><i class="fa fa-lg fa-fw fa-check" id="icon"></i>Add Grades</font></a></li>
+				<li><a href="/student-drop.html"><i class="fa fa-lg fa-fw fa-cloud-upload" id="icon"></i>Upload Documents</font></a></li>
+				<li><a href="/student-search.html"><i class="fa fa-lg fa-fw fa-search" id="icon"></i>Search for Schools</font></a></li>
+				<li><a href="/student-epass.html"><i class="fa fa-lg fa-fw fa-lock" id="icon"></i>Change Password</font></a></li>
             </ul>
         </div>
 
@@ -102,8 +102,8 @@
     </div><!-- end of jumbotron-->
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="/js/jquery-1.10.2.js"></script>
+    <script src="/js/bootstrap.js"></script>
 
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>

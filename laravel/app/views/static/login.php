@@ -39,12 +39,12 @@
 			<center><img src="img/URM_Logo.png" class="img-responsive" alt="Responsive image"></center>
  			<center><img src="img/u3849-4.png" class="img-responsive" alt="Responsive image"></center>
             <br>
-			<form id="login-form" role="form" action="student-dash.html">	
+			<form id="login-form" role="form" action="login" method="post">	
             	<div class="row"><div class="control-group col-sm-offset-4 col-lg-4">	
             		<div class="control">
                 		<div class="input-group input-group-lg">
                				<span class="input-group-addon"><i class="icon-append fa fa-user"></i></span>
-							<input type="email" name="username" id="uname" class="form-control" placeholder="Email" 
+							<input type="email" name="email" id="email" class="form-control" placeholder="Email" 
                    			required data-validation-required-message="You must enter your email" autofocus>
                    		</div>
                    		<p class="help-block"></p>
@@ -54,7 +54,7 @@
                		<div class="controls">
                			<div class="input-group input-group-lg">
                    			<span class="input-group-addon"><i class="icon-append fa fa-lock"></i></span>
-							<input type="password" name="password" id="passw" class="form-control" placeholder="Password"                    		required data-validation-required-message="You forgot your password">
+							<input type="password" name="password" id="password" class="form-control" placeholder="Password"                    		required data-validation-required-message="You forgot your password">
                     	</div>
                     	<p class="help-block"></p>
                 	</div>
