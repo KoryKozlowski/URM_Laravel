@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="icon" type="image/png" href="img/favicon/favicon.ico">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+	<link rel="stylesheet" href="/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="/img/favicon/favicon.ico">
     <title>University Recruit Me</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="/css/jumbotron.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="/../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="/https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="/https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
 
@@ -38,7 +38,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-          <a class="navbar-brand" href="/"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
+          <a class="navbar-brand" href="/"><img src="/img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
         </div>
         <div class="navbar-collapse collapse">
 			 <ul class="nav navbar-nav navbar-right">
@@ -149,10 +149,10 @@
 	</div>
     <div class="container col-xs-4 col-sm-4 col-md-4 col-lg-4">
     	<div class="row">
-    		<center><img src="img/URM_Logo.png" class="img-responsive" alt="Responsive image"></center>
+    		<center><img src="/img/URM_Logo.png" class="img-responsive" alt="Responsive image"></center>
         </div>
         <div class="row">
-        	<center><img src="img/u3849-4.png" class="img-responsive" alt="Responsive image"></center>
+        	<center><img src="/img/u3849-4.png" class="img-responsive" alt="Responsive image"></center>
         </div>
     </div>
 </div>
@@ -222,9 +222,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/tooltips.js"></script>
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/tooltips.js"></script>
     <script>
   		$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
 	</script>

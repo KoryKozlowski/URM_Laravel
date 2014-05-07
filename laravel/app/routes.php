@@ -31,7 +31,7 @@ Route::get('contact', function()
 // register.html
 Route::get('register', function()
 {
-    return View::make('static.register');
+    return Redirect::to('student/create');
 });
 
 // sign-in.html
