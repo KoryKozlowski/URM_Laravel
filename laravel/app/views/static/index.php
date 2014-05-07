@@ -38,17 +38,17 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-          <a class="navbar-brand" href="index.html"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
+          <a class="navbar-brand" href="/"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
         </div>
         <div class="navbar-collapse collapse">
 			 <ul class="nav navbar-nav navbar-right">
-				<li><a href="about.html">About</a></li>
-				<li><a href="student.html">Student</a></li>
-				<li><a href="counselor.html">High School Counselor</a></li>
-				<li><a href="uni.html">Universities and Colleges</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about">About</a></li>
+				<li><a href="student">Student</a></li>
+				<li><a href="counselor">High School Counselor</a></li>
+				<li><a href="university">Universities and Colleges</a></li>
+				<li><a href="contact">Contact</a></li>
 				<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myLoginModal" id="menu-but">Login</button></li>
-        <li><a href="Register.html"><button type="button" class="btn btn-success" id="menu-but2">Sign up</button></a></li>
+        <li><a href="register"><button type="button" class="btn btn-success" id="menu-but2">Sign up</button></a></li>
 			  </ul>	  
         </div><!--/.navbar-collapse -->
       </div>
