@@ -104,7 +104,7 @@
 					<span class="input-group-addon"><i class="icon-append fa fa-lock"></i></span>
 					<input type="Password" id="confirm_password" class="form-control input" name="confirm_password" placeholder="Re-enter Password"
                     required data-validation-required-message="You must confirm your password"
-                    data-validation-match-match="passwd"
+                    data-validation-match-match="password"
                     data-validation-match-message="Password does not match">
                 </div><p class="help-block"></p>
 			</div>
