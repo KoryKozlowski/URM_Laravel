@@ -14,9 +14,9 @@ class GradesTableSeeder extends Seeder {
       $course = Course::orderBy(DB::raw('RAND()'))->first();
       $school = School::orderBy(DB::raw('RAND()'))->first();
       Grade::create([
-        'student_id'  => $student->student_id,
-        'course_id'  => $course->course_id,
-        'school_id'  => $school->school_id,
+        'student_id'  => $student->id,
+        'course_id'  => $course->id,
+        'school_id'  => $school->id,
         'year_taken' => $faker->year,
         'grade'      => $faker->randomNumber(0, 100)
 			]);

@@ -13,11 +13,7 @@ class CreateCounselorsTable extends Migration {
 	public function up()
 	{
 		Schema::create('counselors', function(Blueprint $table) {
-			$table->increments('counselors_id');
-			$table->string('email')->unique();
-			$table->string('password');
-			$table->string('first_name');
-			$table->string('last_name');
+			$table->increments('id');
 			$table->integer('school_id');
       $table->timestamps();
 		});

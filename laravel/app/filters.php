@@ -38,6 +38,20 @@ Route::filter('auth', function()
 	if (Auth::guest()) return Redirect::guest('login');
 });
 
+Route::filter('student', function()
+{
+  if(Auth::user()->role != 1) return Redirect::to('/');
+});
+
+Route::filter('recruiter', function()
+{
+  if(Auth::user()->role != 2) return Redirect::to('/');
+});
+
+Route::filter('counselor', function()
+{
+  if(Auth::user()->role != 3) return Redirect::to('/');
+});
 
 Route::filter('auth.basic', function()
 {

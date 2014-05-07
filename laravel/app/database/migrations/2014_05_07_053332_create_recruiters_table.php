@@ -13,11 +13,7 @@ class CreateRecruitersTable extends Migration {
 	public function up()
 	{
 		Schema::create('recruiters', function(Blueprint $table) {
-			$table->increments('recruiter_id');
-			$table->string('email')->unique();
-			$table->string('password');
-			$table->string('first_name');
-			$table->string('last_name');
+			$table->increments('id');
 			$table->integer('school_id')->unsigned();
 			$table->boolean('verified');
 			$table->timestamps();

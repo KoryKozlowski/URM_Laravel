@@ -13,7 +13,7 @@ class CreateCoursesTable extends Migration {
 	public function up()
 	{
 		Schema::create('courses', function(Blueprint $table) {
-			$table->increments('course_id');
+			$table->increments('id');
 			$table->string('course_name');
 			$table->string('subject');
 			$table->integer('type');

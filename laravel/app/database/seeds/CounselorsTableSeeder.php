@@ -10,12 +10,9 @@ class CounselorsTableSeeder extends Seeder {
 
 		foreach(range(1, 10) as $index)
 		{
+      $school = School::orderBy(DB::raw('RAND()'))->first();
 			Counselor::create([
-        'email'     => $faker->email,
-        'password'  => Hash::make('password'),
-        'first_name'=> $faker->firstName,
-        'last_name' => $faker->lastName,
-        'school_id' => 1
+        'school_id' => $school->id
 			]);
 		}
 	}

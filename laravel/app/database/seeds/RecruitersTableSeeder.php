@@ -12,11 +12,7 @@ class RecruitersTableSeeder extends Seeder {
 		{
       $school = School::orderBy(DB::raw('RAND()'))->first();
       Recruiter::create([
-        'email'     => $faker->email, 
-        'password'  => Hash::make('password'),
-        'first_name'=> $faker->firstName, 
-        'last_name' => $faker->lastName,
-        'school_id' => $school->school_id,
+        'school_id' => $school->id,
         'verified'  => $faker->boolean
 			]);
 		}
