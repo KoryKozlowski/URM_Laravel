@@ -61,12 +61,12 @@
 <div class="container">
 <legend>Sign up with University Recruit Me!</legend>
 	<div class="well col-xs-8 col-sm-8 col-md-8 col-lg-8" style="float:left">
-		<form id="signup" method="post" action="success.php">
+		<form id="signup" method="post" action="/student">
 		<div class="row"><div class="control-group col-xs-6 col-sm-6 col-md-6">
 			<div class="controls">
 			    <div class="input-group">
 					<span class="input-group-addon"><i class="icon-append fa fa-user"></i></span>
-					<input type="text" class="form-control input" id="fname" name="fname" placeholder="First Name" 
+					<input type="text" class="form-control input" id="first_name" name="first_name" placeholder="First Name" 
                     required data-validation-required-message="First name required">
 				</div><p class="help-block"></p>
 			</div>
@@ -75,7 +75,7 @@
 			<div class="controls">
 			    <div class="input-group">
 					<span class="input-group-addon"><i class="icon-append fa fa-user"></i></span>
-					<input type="text" class="form-control input" id="lname" name="lname" placeholder="Last Name" 
+					<input type="text" class="form-control input" id="last_name" name="last_name" placeholder="Last Name" 
                     required data-validation-required-message="Last name required">
 				</div><p class="help-block"></p>
 			</div>
@@ -93,7 +93,7 @@
 			<div class="controls">
 			    <div class="input-group">
 					<span class="input-group-addon"><i class="icon-append fa fa-lock"></i></span>
-					<input type="Password" id="passw" class="form-control input" name="passwd" placeholder="Password" 
+					<input type="Password" id="password" class="form-control input" name="password" placeholder="Password" 
                     required data-validation-required-message="Password required">
                 </div><p class="help-block"></p>
 			</div>
@@ -102,7 +102,7 @@
 			<div class="controls">
 			    <div class="input-group">
 					<span class="input-group-addon"><i class="icon-append fa fa-lock"></i></span>
-					<input type="Password" id="cpass" class="form-control input" name="cpass" placeholder="Re-enter Password"
+					<input type="Password" id="confirm_password" class="form-control input" name="confirm_password" placeholder="Re-enter Password"
                     required data-validation-required-message="You must confirm your password"
                     data-validation-match-match="passwd"
                     data-validation-match-message="Password does not match">
