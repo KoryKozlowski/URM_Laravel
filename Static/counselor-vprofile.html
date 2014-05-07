@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/favicon/favicon.ico">
+    <title>URM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sidebar.css" rel="stylesheet">
+	
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		  <div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			  <a class="navbar-brand" href="counselor-dash.html"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				 <ul class="nav navbar-nav navbar-right">
+					<li><a href="counselor-about.html">About Us</a></li>
+					<li><a href="student.html">Student</a></li>
+					<li><a href="counselor.html">High School Counselor</a></li>
+					<li><a href="uni.html">Universities and Colleges</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li>
+						<img class="img-thumbnail" style="height:auto; width:auto; max-width:50px; max-height:50px;" src="http://i.dailymail.co.uk/i/pix/2009/07/29/article-1202532-05DFAF54000005DC-414_233x360.jpg">
+						<font class="userfont">Ms.Quin</font>
+					</li>
+				  </ul>	  
+			</div><!--/.navbar-collapse -->
+		  </div>
+		</div>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+				</li>
+				<br>
+                <li><a href="counselor-dash.html"><i class="fa fa-lg fa-fw fa-home" id="icon"></i>Home</font></a></li>
+				<li><a href="counselor-inbox.html"><i class="fa fa-lg fa-fw fa-inbox" id="icon"></i> Inbox</font></a></li>
+				<li class="active"><a href="counselor-vprofile.html"><i class="fa fa-lg fa-fw fa-picture-o" id="icon"></i>View Profile</font></a></li>
+				<li><a href="counselor-eprofile.html"><i class="fa fa-lg fa-fw fa-pencil-square-o" id="icon"></i>Edit Profile</font></a></li>
+				<li><a href="counselor-verify.html"><i class="fa fa-lg fa-fw fa-check" id="icon"></i>Verify Grades</font></a></li>
+				<li><a href="counselor-drop.html"><i class="fa fa-lg fa-fw fa-cloud-upload" id="icon"></i>Upload Documents</font></a></li>
+				<li><a href="counselor-search.html"><i class="fa fa-lg fa-fw fa-search" id="icon"></i>Search for Students</font></a></li>
+				<li><a href="counselor-epass.html"><i class="fa fa-lg fa-fw fa-lock" id="icon"></i>Change Password</font></a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <!-- Keep all page content within the page-content inset div! -->
+			<br>
+			<br>
+
+			<div class="jumbotron" align="center" id="jumbopad">
+				<div class="container">
+					<table class="jumbo">
+						<tr>
+							<td align="left"><img class="img-thumbnail" style="height:auto; width:auto; max-width:200px; max-height:200px;" src="http://i.dailymail.co.uk/i/pix/2009/07/29/article-1202532-05DFAF54000005DC-414_233x360.jpg"></td>
+							<td align="bottom">
+								<p><h3>Dont panic it will be ok.</h3></p>
+								 
+							</td>
+							<td align="right">
+								<p><h3>Ms.Quinn</h3></p>
+								<p>Independance High School</p>
+								<p>Independance Mississippi</p>
+							</td>
+							
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="viewpro">
+			<div class="btn-group" id="classbut">
+				<button type="button" class="btn btn-default">Freshman</button>
+				<button type="button" class="btn btn-default">Sophomore</button>
+				<button type="button" class="btn btn-default">Junior</button>
+				<button type="button" class="btn btn-default">Senior</button>
+			</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+                            <h2 class="panel-tite">Students to verify:</h2>							
+                            </div>
+                          <!--  <div class="panel-body">-->
+                            <p>Thomas Hipps</p>
+                            <p>John Wang</p>
+						</div>
+					</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h2 class="panel-title">College Bound Students:</h2>
+							</div>
+							<div class="panel-body">
+								<p>Neal Patel</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h2 class="panel-title">My Files:</h2>
+							</div>
+							<div class="panel-body">
+								<p>Grades &amp; ACT Scores</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="row" id="cbar">
+						<div class="col-md-10">
+							<h3>Verified Students:</h3>
+							<div class="progress progress-striped active">
+							  <div class="progress-bar progress-bar-success"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+							    <span class="sr-only">65% Complete</span>
+							  </div>
+							</div>
+						</div>
+					</div>
+			<div class="content-header" >
+                <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i>Click to view menu</a>
+        	</div>
+		</div>
+	</div>		
+			
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="ED: Reading" />
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  
+  <script type="text/x-handlebars">
+  <nav id="master">
+    <header>
+      All Students ({{controller.length}})
+    </header>
+  
+    <ul>
+      {{#each controller}}
+      <li>
+        {{#linkTo "student" this}}
+          {{fullname}}
+        {{/linkTo}}
+      </li>
+      {{/each}}
+    </ul>
+    
+    <div id="controls">
+      <button class="btn">+</button>
+      <button class="btn pull-right">-</button>
+    </div>
+  </nav>
+  
+  <div id="detail">
+    {{outlet}}
+  </div>
+  </script>
+ 
+  <script type="text/x-handlebars" id="index">
+  <div class="welcome">
+    <h2>Students</h2>
+  </div>
+  </script>
+  
+  <script type="text/x-handlebars" id="student">
+  <header class="contact-header">
+  </header>
+
+  <dl class="contact-data">
+    <dt><label for="student-fullname">Name</label></dt>
+    <dd>{{input value=fullname id="student-fullname"}}</dd>
+
+    <dt><label for="student-user_id">ID</label></dt>
+    <dd>
+      {{input value=user_id id="user_id"}}
+      {{#if user_id}}
+      <br><a {{bindAttr href="user_id"}}>view ➚</a>
+      {{/if}}
+    </dd>
+  </dl>
+  </script>
+  <script src="js/libs/jquery-1.9.1.js"></script>
+  <script src="js/libs/handlebars-1.0.0.js"></script>
+  <script src="js/libs/ember-1.0.0-rc.8.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

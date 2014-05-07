@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/favicon/favicon.ico">
+    <title>University Recruit Me</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+			<a class="navbar-brand" href="student-dash.html"><img src="img/logo_2.png"><font color="#fcb040">URM</font></a>
+        </div>	
+		
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" id="hide">
+			<div class="boxed">
+				<img class="img-thumbnail" style="height:auto; width:auto; max-width:100px; max-height:75px;" src="img/q.jpg">
+				John Doe
+			</div>
+          <ul class="nav nav-sidebar">
+            <li><a href="student-dash.html"><i class="fa fa-lg fa-fw fa-home"></i>Home</font></a></li>
+            <li><a href="student-inbox.html"><i class="fa fa-lg fa-fw fa-inbox"></i> Inbox</font></a></li>
+            <li><a href="student-vprofile.html"><i class="fa fa-lg fa-fw fa-picture-o"></i>View Profile</font></a></li>
+            <li><a href="student-eprofile.html"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i>Edit Profile</font></a></li>
+			<li class="active"><a href="student-addg.html"><i class="fa fa-lg fa-fw fa-check"></i>Add Grades</font></a></li>
+			<li><a href="student-drop.html"><i class="fa fa-lg fa-fw fa-cloud-upload"></i>Upload Documents</font></a></li>
+			<li><a href="student-search.html"><i class="fa fa-lg fa-fw fa-search"></i>Search for Schools</font></a></li>
+			<li><a href="student-about.html"><i class="fa fa-lg fa-fw fa-globe "></i>About Us</font></a></li>
+			<li><a href="student-epass.html"><i class="fa fa-lg fa-fw fa-lock "></i>Change Password</font></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Add Grades</h3>
+				</div>
+				<div class="panel-body">
+					<INPUT type="button" value="Add Row" onclick="addRow('dataTable')" />
+					<INPUT type="button" value="Delete Row" onclick="deleteRow('dataTable')" />
+					<br>
+					<br>
+					<form id="courses">	
+						<div class="table-responsive">
+							<TABLE id="dataTable" width="350px" border="0" class="table table-striped">
+								<TR>
+									<TD><INPUT type="checkbox" name="chk[]"/></TD>
+									<TD>
+										<SELECT name="class[]">
+											<OPTION value="fr">Freshman</OPTION>
+											<OPTION value="so">Sophomore</OPTION>
+											<OPTION value="jr">Junior</OPTION>
+											<OPTION value="sr">Senior</OPTION>
+										</SELECT>
+									</TD>
+									<TD>
+										<SELECT name="type[]">
+											<OPTION value="m">Math</OPTION>
+											<OPTION value="s">Science</OPTION>
+											<OPTION value="e">English</OPTION>
+											<OPTION value="h">History</OPTION>
+											<OPTION value="o">Other</OPTION>
+										</SELECT>
+									</TD>
+									<TD><INPUT type="text" name="name[]" placeholder="Name of course"/></TD>
+									<TD>
+										<SELECT name="letter[]">
+											<OPTION value="ap">A+</OPTION>
+											<OPTION value="a">A</OPTION>
+											<OPTION value="am">A-</OPTION>
+											<OPTION value="bp">B+</OPTION>
+											<OPTION value="b">B</OPTION>
+											<OPTION value="bm">B-</OPTION>
+											<OPTION value="cp">C+</OPTION>
+											<OPTION value="c">C</OPTION>
+											<OPTION value="cm">C-</OPTION>
+											<OPTION value="dp">D+</OPTION>
+											<OPTION value="d">D</OPTION>
+											<OPTION value="dm">D-</OPTION>
+											<OPTION value="fp">F+</OPTION>
+											<OPTION value="f">F</OPTION>
+											<OPTION value="fm">F-</OPTION>
+											<OPTION value="drop">Drop</OPTION>
+										</SELECT>
+									</TD>
+								</TR>
+							</TABLE>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<button type="submit" class="btn btn-primary">
+								Submit
+						</button>
+						</form>
+					</div>
+				</div>	
+			</div>
+        </div>
+      </div>
+    </div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script>
+			function addRow(tableID) {
+ 
+            var table = document.getElementById(tableID);
+ 
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+ 
+            var colCount = table.rows[0].cells.length;
+ 
+            for(var i=0; i<colCount; i++) {
+ 
+                var newcell = row.insertCell(i);
+ 
+                newcell.innerHTML = table.rows[0].cells[i].innerHTML;
+                //alert(newcell.childNodes);
+                switch(newcell.childNodes[0].type) {
+                    case "text":
+                            newcell.childNodes[0].value = "";
+                            break;
+                    case "checkbox":
+                            newcell.childNodes[0].checked = false;
+                            break;
+                    case "select-one":
+                            newcell.childNodes[0].selectedIndex = 0;
+                            break;
+                }
+            }
+        }
+ 
+        function deleteRow(tableID) {
+            try {
+            var table = document.getElementById(tableID);
+            var rowCount = table.rows.length;
+ 
+            for(var i=0; i<rowCount; i++) {
+                var row = table.rows[i];
+                var chkbox = row.cells[0].childNodes[0];
+                if(null != chkbox && true == chkbox.checked) {
+                    if(rowCount <= 1) {
+                        alert("Cannot delete all the rows.");
+                        break;
+                    }
+                    table.deleteRow(i);
+                    rowCount--;
+                    i--;
+                }
+ 
+ 
+            }
+            }catch(e) {
+                alert(e);
+            }
+        } 
+		</script>
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			
+	
+			
+		
+		
+		})
+
+		</script>
+	
+  </body>
+</html>

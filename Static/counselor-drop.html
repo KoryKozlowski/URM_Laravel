@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/favicon/favicon.ico">
+    <title>URM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sidebar.css" rel="stylesheet">
+     <link href="css/dropzone.css" rel="stylesheet">
+    
+	
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		  <div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+			  <a class="navbar-brand" href="counselor-dash.html"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				 <ul class="nav navbar-nav navbar-right">
+					<li><a href="counselor-about.html">About Us</a></li>
+					<li><a href="student.html">Student</a></li>
+					<li><a href="counselor.html">High School Counselor</a></li>
+					<li><a href="uni.html">Universities and Colleges</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li>
+						<img class="img-thumbnail" style="height:auto; width:auto; max-width:50px; max-height:50px;" src="img/q.jpg">
+						<font class="userfont">Ms.Quinn</font>
+					</li>
+				  </ul>	  
+			</div><!--/.navbar-collapse -->
+		  </div>
+		</div>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+				</li>
+				<br>
+                <li><a href="counselor-dash.html"><i class="fa fa-lg fa-fw fa-home" id="icon"></i>Home</font></a></li>
+				<li><a href="counselor-inbox.html"><i class="fa fa-lg fa-fw fa-inbox" id="icon"></i> Inbox</font></a></li>
+				<li><a href="counselor-vprofile.html"><i class="fa fa-lg fa-fw fa-picture-o" id="icon"></i>View Profile</font></a></li>
+				<li><a href="counselor-eprofile.html"><i class="fa fa-lg fa-fw fa-pencil-square-o" id="icon"></i>Edit Profile</font></a></li>
+				<li><a href="counselor-verify.html"><i class="fa fa-lg fa-fw fa-check" id="icon"></i>Verify Grades</font></a></li>
+				<li class="active"><a href="counselor-drop.html"><i class="fa fa-lg fa-fw fa-cloud-upload" id="icon"></i>Upload Documents</font></a></li>
+				<li ><a href="counselor-search.html"><i class="fa fa-lg fa-fw fa-search" id="icon"></i>Search for Students</font></a></li>
+				<li><a href="counselor-epass.html"><i class="fa fa-lg fa-fw fa-lock" id="icon"></i>Change Password</font></a></li>
+            </ul>
+        </div>
+ <!-- Page content -->
+      
+            <div id="page-content-wrapper">
+            <!-- Keep all page content within the page-content inset div! -->
+			<br>
+			<br>
+            <div class="page-content inset">
+                <div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Dropzone</h3>
+					</div>
+					<div class="panel-body">
+						<form action="upload.php" class="dropzone">
+						</form>
+					</div>
+				</div>
+            </div>
+			<div class="content-header">
+                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i>Click to view menu</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/dropzone.min.js"></script>
+    <!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>
