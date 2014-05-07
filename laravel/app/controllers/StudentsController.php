@@ -19,9 +19,19 @@ class StudentsController extends \BaseController {
 	 */
 	public function store()
 	{
-    $data = Input::all();
-    // Create a student based on the form data
-    Student::create($data);
+    $student = new Student;
+    $student->verified = false;
+    $student->save(); 
+    
+    User::create([
+      'first_name' => Input::get('first_name'),
+      'last_name'  => Input::get('last_name'),
+      'email'      => Input::get('email'),
+      'password'   => Hash::make(Input::get('password')),
+      'role'       => 1,
+      'role_id'    => $student->id 
+    ]);
+    
     // send them to their dashboard 
 		return Redirect::route('students.dash');
 	}

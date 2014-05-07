@@ -14,12 +14,12 @@ class CreateStudentsTable extends Migration {
 	{
 		Schema::create('students', function(Blueprint $table) {
 			$table->increments('id');
-			$table->integer('ACT');
-			$table->integer('SAT');
-			$table->float('GPA');
-			$table->text('statement');
-			$table->integer('school_id')->unsigned();
-			$table->integer('counselor_id')->unsigned();
+			$table->integer('ACT')->nullable();
+			$table->integer('SAT')->nullable();
+			$table->float('GPA')->nullable();
+			$table->text('statement')->nullable();
+			$table->integer('school_id')->unsigned()->nullable();
+			$table->integer('counselor_id')->unsigned()->nullable();
 			$table->boolean('verified');
 			$table->timestamps();
       // Add this after the schools migration is made.

@@ -14,7 +14,7 @@
 // The student resource run ./artisan routes to see what 
 // routes this makes.
 Route::resource('student', 'StudentsController');
-
+Route::get('student/dash', 'StudentsController@dash');
 
 // index.html
 Route::get('/', function()
