@@ -68,9 +68,9 @@ class StudentController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function changePass($id, $oldPass, $newPass)
 	{
-		//
+		DB::update('update students set password = ? where id = ? and password = ?', array($newPass, $id, $oldPass));
 	}
 
 	/**
@@ -81,7 +81,7 @@ class StudentController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		DB::delete('delete from students where id = ?', array($id));
 	}
 
 }
