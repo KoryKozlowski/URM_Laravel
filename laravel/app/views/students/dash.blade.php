@@ -13,7 +13,7 @@
     <title>URM</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="/css/sidebar.css" rel="stylesheet">
@@ -102,8 +102,8 @@
     </div><!-- end of jumbotron-->
 
     <!-- JavaScript -->
-    <script src="/js/jquery-1.10.2.js"></script>
-    <script src="/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>
