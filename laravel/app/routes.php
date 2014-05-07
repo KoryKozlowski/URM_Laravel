@@ -14,47 +14,47 @@
 // index.html
 Route::get('/', function()
 {
-	return View::make('index');
+	return View::make('static.index');
 });
 
 // contact.html
 Route::get('contact', function()
 {
-    return View::make('contact');
+    return View::make('static.contact');
 });
 
 // register.html
 Route::get('register', function()
 {
-    return View::make('register');
+    return View::make('static.register');
 });
 
 // sign-in.html
 Route::get('login', function()
 {
-    return View::make('login');
+    return View::make('static.login');
 });
 
 // counselor.html
 Route::get('counselor', function()
 {
-    return View::make('counselor');
+    return View::make('static.counselor');
 });
 
 // student.html
 Route::get('student', function()
 {
-    return View::make('student');
+    return View::make('static.student');
 });
 
 // uni.html
 Route::get('university', function()
 {
-    return View::make('university');
+    return View::make('static.university');
 });
 
 // terms.html
 Route::get('terms', function()
 {
-    return View::make('terms');
+    return View::make('static.terms');
 });
