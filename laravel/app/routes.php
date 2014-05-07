@@ -11,6 +11,11 @@
 |
 */
 
+// The student resource run ./artisan routes to see what 
+// routes this makes.
+Route::resource('student', 'StudentsController');
+
+
 // index.html
 Route::get('/', function()
 {
