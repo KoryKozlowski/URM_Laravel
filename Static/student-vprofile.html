@@ -13,7 +13,7 @@
     <title>URM</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="css/sidebar.css" rel="stylesheet">
@@ -41,7 +41,7 @@
 					<li><a href="contact.html">Contact</a></li>
 					<li>
 						<img class="img-thumbnail" style="height:auto; width:auto; max-width:50px; max-height:50px;" src="img/q.jpg">
-						<font class="userfont">John Doe</font>
+						<font class="userfont"> {{ $data['user']->first_name }} {{ $data['user']->last_name }} </font>
 					</li>
 				  </ul>	  
 			</div><!--/.navbar-collapse -->
@@ -183,8 +183,8 @@
 		</div>
 	</div>		
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>

@@ -59,11 +59,17 @@ class StudentsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show()
 	{
-		$student = Student::findOrFail($id);
-
-		return View::make('students.show', compact('student'));
+        $student = Student::findOrFail(Auth::user()->role_id);
+        $user = User::findOrFail(Auth::user()->email);
+        $school = School::findOrFail($student->school_id);
+        $data = [
+            'student' => $student,
+            'user' => $user,
+            'school' => $school
+        ];
+		return View::make('students.show')->with('data', $data);
 	}
 
 	/**
