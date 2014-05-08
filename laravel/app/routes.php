@@ -33,6 +33,11 @@ Route::get('/', function()
 	return View::make('static.index');
 });
 
+Route::get('about', function()
+{
+  return View::make('static.about');
+});
+
 // contact.html
 Route::get('contact', function()
 {
