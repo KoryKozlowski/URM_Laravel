@@ -103,7 +103,7 @@ class StudentsController extends \BaseController {
 
 		$student->update($data);
 
-		return Redirect::route('students.dash');
+		return Redirect::to('student/show');
 	}
 
 	/**

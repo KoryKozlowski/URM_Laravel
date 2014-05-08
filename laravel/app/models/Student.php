@@ -8,6 +8,19 @@ class Student extends \Eloquent {
 	];
 
 	// Don't forget to fill this array
-	protected $fillable = [];
-
+	protected $fillable = [
+		'ACT',
+		'SAT',
+		'GPA',
+		'statement',
+		'school_id',
+		'counselor_id',
+		'verified',
+		'PLAN',
+		'clubs',
+		'sports',
+		'jobs',
+		'aspiration',
+		'champions'
+	];
 }

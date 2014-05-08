@@ -86,23 +86,23 @@
                                     <div class="control-group">
                                         <label class="control-label" for="statement">Favorite Quote:</label>
                                         <div class="controls">
-                                             <textarea rows="2" cols="50" id="statement" name="statement" form="editform"></textarea>
+                                             <textarea rows="2" cols="50" id="statement" name="statement" form="editform">{{ $data['student']->statement }}"</textarea>
                                         </div> 
                                         <label class="control-label" for="PLAN">PLAN Score:</label>
                                         <div class="controls">
-                                             <input type="number" id="PLAN" name="PLAN"/>
+                                             <input type="number" id="PLAN" name="PLAN" value="{{ $data['student']->PLAN }}"/>
                                         </div>
                                         <label class="control-label" for="ACT">ACT Score:</label>
                                         <div class="controls">
-                                             <input type="number" id="ACT" name="ACT"/>
+                                             <input type="number" id="ACT" name="ACT" value="{{ $data['student']->ACT }}"/>
                                         </div>
                                         <label class="control-label" for="SAT">SAT Score:</label>
                                         <div class="controls">
-                                             <input type="number" id="SAT" name="SAT"/>
+                                             <input type="number" id="SAT" name="SAT" value="{{ $data['student']->SAT }}"/>
                                         </div>
                                         <label class="control-label" for="GPA">GPA:</label>
                                         <div class="controls">
-                                             <input type="number" id="GPA" name="GPA"/>
+                                             <input type="number" id="GPA" name="GPA" value="{{ $data['student']->GPA }}"/>
                                         </div>
                                     </div>
                                 </div>
