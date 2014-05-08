@@ -26,7 +26,7 @@ class StudentsTableSeeder extends Seeder {
         'sports'     => $faker->text($maxNbChars = 100),
         'jobs'       => $faker->text($maxNbChars = 100),
         'aspiration' => $faker->text($maxNbChars = 100),
-        'champion'   => $faker->text($maxNbChars = 400) 
+        'champions'   => $faker->text($maxNbChars = 400) 
 			]);
 		}
 	}
