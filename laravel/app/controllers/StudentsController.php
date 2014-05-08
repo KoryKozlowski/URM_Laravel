@@ -78,11 +78,15 @@ class StudentsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit()
 	{
-		$student = Student::find($id);
+		$student = Student::find(Auth::user()->role_id);
+		$data = [
+			'student' => $student,
+			'user' 		=> Auth::user()
+		];
 
-		return View::make('students.edit', compact('student'));
+		return View::make('students.edit')->with('data', $data);
 	}
 
 	/**
