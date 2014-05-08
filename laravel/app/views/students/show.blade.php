@@ -111,8 +111,9 @@
                                 <h2 class="panel-title">My Books:</h2>
                             </div>
                             <div class="panel-body">
-                                <p>ACT Score: {{ $data['student']->ACT }}</p>
-                                <p>SAT Score: {{ $data['student']->SAT }}</p>
+                                <p>PLAN Score: {{ $data['student']->PLAN }}</p>
+                                <p>ACT Score:  {{ $data['student']->ACT }}</p>
+                                <p>SAT Score:  {{ $data['student']->SAT }}</p>
                                 <p>GPA: {{ $data['student']->GPA }}</p>
                             </div>
                         </div>
@@ -125,22 +126,19 @@
                             <div class="panel-body">
                                 <p>Clubs/Leadership:</p>
                                     <ul>
-                                        <li>Bata Club</li>
-                                        <li>Chess club</li>
-                                        <li>NHS</li>
+                                        <li>{{ $data['student']->clubs }}</li>
                                     </ul>
                                 <p>Activities/Sports:</p>
                                     <ul>
-                                        <li>Football</li>
-                                        <li>Baseball</li>
+                                        <li>{{ $data['student']->sports }}</li>
                                     </ul>
                                 <p>Jobs/Community Service:</p>
                                     <ul>
-                                        <li>Works at Office Depot</li>
+                                        <li>{{ $data['student']->jobs }}</li>
                                     </ul>
                                 <p>Career Aspirations:</p>
                                     <ul>
-                                        <li>Wants to be construction worker</li>
+                                        <li>{{ $data['student']->aspiration }}</li>
                                     </ul>
                             </div>
                         </div>
@@ -154,7 +152,7 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li>Bill - Manager at Office Depot. He is a great worker! I love John <3</li>
+                                    <li>{{ $data['student']->champions }}</li>
                                 </ul>
                             </div>
                         </div>
