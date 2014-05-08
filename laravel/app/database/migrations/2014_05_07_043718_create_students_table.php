@@ -21,6 +21,12 @@ class CreateStudentsTable extends Migration {
 			$table->integer('school_id')->unsigned()->nullable();
 			$table->integer('counselor_id')->unsigned()->nullable();
 			$table->boolean('verified');
+			$table->integer('PLAN')->nullable();
+			$table->text('clubs')->nullable();
+			$table->text('sports')->nullable();
+			$table->text('jobs')->nullable();
+			$table->text('aspiration')->nullable();
+			$table->text('champions')->nullable();
 			$table->timestamps();
       // Add this after the schools migration is made.
       //$table->foreign('school_id')->references('school_id')->on('schools');

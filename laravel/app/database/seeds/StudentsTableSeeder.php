@@ -20,7 +20,13 @@ class StudentsTableSeeder extends Seeder {
         'statement'  => $faker->text($maxNbChars = 200),
         'school_id'  => $school->id,
         'counselor_id' => $counselor->id,
-        'verified'   => $faker->boolean 
+        'verified'   => $faker->boolean,
+        'PLAN'       => $faker->randomNumber(1, 32),
+        'clubs'      => $faker->text($maxNbChars = 100),
+        'sports'     => $faker->text($maxNbChars = 100),
+        'jobs'       => $faker->text($maxNbChars = 100),
+        'aspiration' => $faker->text($maxNbChars = 100),
+        'champion'   => $faker->text($maxNbChars = 400) 
 			]);
 		}
 	}
