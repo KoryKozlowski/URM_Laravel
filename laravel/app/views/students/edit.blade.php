@@ -73,7 +73,7 @@
             <br>
             <br>
             <br>
-            <form class="form-horizontal" role="form" id="editform" method="post" action="/student/{{ $data[‘student’]->id }}">
+            <form class="form-horizontal" role="form" id="editform" method="post" action="/student/{{ $data[‘student’]->id }}"><input type="hidden" name="_method" value = "put"/>
                 <div id="viewpro">
                     <div class="row">
                         <div class="col-md-5">
