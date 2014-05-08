@@ -5,6 +5,10 @@
 
 <style type="text/css">
 
+body {
+  padding-top: 100px;
+}
+
 img.center {
     display: block;
     margin-left: auto;
@@ -34,18 +38,18 @@ img.center {
     </div>
   </div>
 
-  <hr>
+</div>
 
-  <footer>
-    <p>&copy; Company 2014</p>
-  </footer>
-</div> <!-- /container -->
+
+
+
+
 
 @stop
 
 @section('script')
   <script type="text/javascript">
-    $("#nav-about").addClass("active");
+    $("#nav-about").parent().addClass("active");
   </script>
   <script>
     $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );

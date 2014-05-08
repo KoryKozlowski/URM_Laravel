@@ -15,9 +15,6 @@
   <!-- Custom styles for this template -->
   <link href="/css/jumbotron.css" rel="stylesheet">
   <style type="text/css">
-    body {
-      padding-top: 100px;
-    }
     .navbar-inner{
         position:relative;
         padding-left:70px;
@@ -33,10 +30,13 @@
         left: 0px;
         top: 0px;
         padding: 10px;
-        z-index: -1;
+        z-index: 1;
     }
 
     @media (max-width: 1020px) {
+      .navbar .brand {
+        z-index: -1;
+      }
       .navbar-header {
           float: none;
       }
@@ -90,7 +90,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="brand" href="/index"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
+        <a class="brand" href="/"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
       <div class="navbar-collapse collapse">
 
         <div style="padding-left:10px;padding-right:10px;" class="nav navbar-right">
@@ -111,9 +111,14 @@
       </div>
       
   </div>
-
   @yield('content')
-
+  
+  <hr>
+  <div class="container">
+    <footer>
+      <p>&copy; University Recruit Me, 2014</p>
+    </footer>
+  </div>
 
 
 
