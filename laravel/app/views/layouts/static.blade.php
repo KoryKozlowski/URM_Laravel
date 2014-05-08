@@ -32,6 +32,7 @@
         padding: 10px;
         z-index: 1;
     }
+    
 
     @media (max-width: 1020px) {
       .navbar .brand {
@@ -90,7 +91,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="brand" href="/"><img src="img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
+        <a class="brand" href="/"><img src="/img/logo_2.png"><font color="#fcb040"> University Recruit Me</font></a>
       <div class="navbar-collapse collapse">
 
         <div style="padding-left:10px;padding-right:10px;" class="nav navbar-right">
