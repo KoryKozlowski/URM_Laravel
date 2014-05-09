@@ -16,7 +16,8 @@ class StudentsTableSeeder extends Seeder {
 			Student::create([
         'ACT'        => $faker->randomNumber(0, 36),
         'SAT'        => $faker->randomNumber(0, 2400),
-        'GPA'        => $faker->randomFloat($nbMaxDecimals = NULL, $min = 0, $max = 4),
+        'GPA'        => $faker->randomNumber(0, 4),
+        'year'       => $faker->randomNumber(1, 4),
         'statement'  => $faker->text($maxNbChars = 200),
         'school_id'  => $school->id,
         'counselor_id' => $counselor->id,
