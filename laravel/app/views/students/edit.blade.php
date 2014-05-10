@@ -90,19 +90,19 @@
                                         </div> 
                                         <label class="control-label" for="PLAN">PLAN Score:</label>
                                         <div class="controls">
-                                             <input type="number" min="0" max="32" id="PLAN" name="PLAN" value="{{ $data['student']->PLAN }}"/>
+                                             <input type="number" id="PLAN" name="PLAN" value="{{ $data['student']->PLAN }}"/>
                                         </div>
                                         <label class="control-label" for="ACT">ACT Score:</label>
                                         <div class="controls">
-                                             <input type="number" min="0" max="36" id="ACT" name="ACT" value="{{ $data['student']->ACT }}"/>
+                                             <input type="number" id="ACT" name="ACT" value="{{ $data['student']->ACT }}"/>
                                         </div>
                                         <label class="control-label" for="SAT">SAT Score:</label>
                                         <div class="controls">
-                                             <input type="number" min="0" max="2400" id="SAT" name="SAT" value="{{ $data['student']->SAT }}"/>
+                                             <input type="number" id="SAT" name="SAT" value="{{ $data['student']->SAT }}"/>
                                         </div>
                                         <label class="control-label" for="GPA">GPA:</label>
                                         <div class="controls">
-                                             <input type="number" min="0" max="4" step="0.01" id="GPA" name="GPA" value="{{ $data['student']->GPA }}"/>
+                                             <input type="number" id="GPA" name="GPA" value="{{ $data['student']->GPA }}"/>
                                         </div>
                                     </div>
                                 </div>

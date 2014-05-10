@@ -16,12 +16,11 @@ class CreateStudentsTable extends Migration {
 			$table->increments('id');
 			$table->integer('ACT')->nullable();
 			$table->integer('SAT')->nullable();
-			$table->decimal('GPA', 3, 2)->nullable();
+			$table->float('GPA')->nullable();
 			$table->text('statement')->nullable();
 			$table->integer('school_id')->unsigned()->nullable();
 			$table->integer('counselor_id')->unsigned()->nullable();
 			$table->boolean('verified');
-			$table->integer('year')->nullable();
 			$table->integer('PLAN')->nullable();
 			$table->text('clubs')->nullable();
 			$table->text('sports')->nullable();

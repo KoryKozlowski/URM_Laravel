@@ -98,11 +98,11 @@
                 </div>
             </div>
             <div id="viewpro">
-            <div class="btn-group" id="yearBtn">
-                <button type="button" class="btn btn-default" id="year" name="year" value="1">Freshman</button>
-                <button type="button" class="btn btn-default" id="year" name="year" value="2">Sophomore</button>
-                <button type="button" class="btn btn-default" id="year" name="year" value="3">Junior</button>
-                <button type="button" class="btn btn-default" id="year" name="year" value="4">Senior</button>
+            <div class="btn-group" id="classbut">
+                <button type="button" class="btn btn-default">Freshman</button>
+                <button type="button" class="btn btn-default">Sophomore</button>
+                <button type="button" class="btn btn-default">Junior</button>
+                <button type="button" class="btn btn-active">Senior</button>
             </div>
                 <div class="row">
                     <div class="col-md-5">
@@ -115,7 +115,6 @@
                                 <p>ACT Score:  {{ $data['student']->ACT }}</p>
                                 <p>SAT Score:  {{ $data['student']->SAT }}</p>
                                 <p>GPA: {{ $data['student']->GPA }}</p>
-                                <p>Year: {{ $data['student']->year }} </p>
                             </div>
                         </div>
                     </div>
