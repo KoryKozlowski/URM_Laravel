@@ -63,7 +63,7 @@
         </a>
       </li>
       <li>
-        <a href="/student/password">
+        <a href="/student-epass.html">
           <i class="fa fa-lg fa-fw fa-lock" id="icon">
           </i>
           Change Password

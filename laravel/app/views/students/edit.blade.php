@@ -63,7 +63,7 @@
                 <li><a href="student-addg.html"><i class="fa fa-lg fa-fw fa-check" id="icon"></i>Add Grades</font></a></li>
                 <li><a href="student-drop.html"><i class="fa fa-lg fa-fw fa-cloud-upload" id="icon"></i>Upload Documents</font></a></li>
                 <li><a href="student-search.html"><i class="fa fa-lg fa-fw fa-search" id="icon"></i>Search for Schools</font></a></li>
-                <li><a href="/student/password"><i class="fa fa-lg fa-fw fa-lock" id="icon"></i>Change Password</font></a></li>
+                <li><a href="/password"><i class="fa fa-lg fa-fw fa-lock" id="icon"></i>Change Password</font></a></li>
             </ul>
         </div>
 
@@ -104,10 +104,6 @@
                                         <div class="controls">
                                              <input type="number" min="0" max="4" step="0.01" id="GPA" name="GPA" value="{{ $data['student']->GPA }}"/>
                                         </div>
-                                        <label class="control-label" for="year">Year In School:</label>
-                                        <div class="controls">
-                                            <input type="number" min="1" max="4" id="year" name="year" value="{{ $data['student']->year }}"/>
-                                        </div>    
                                     </div>
                                 </div>
                             </div>
@@ -121,19 +117,19 @@
                                 <div class="control-group" id="formSpace">
                                     <label class="control-label" for="clubs">Clubs/Leadership:</label>
                                     <div class="controls">
-                                        <textarea rows="2" cols="50" name="clubs" id="clubs" form="editform" value="{{ $data['student']->clubs }}"></textarea>
+                                        <textarea rows="2" cols="50" name="clubs" id="clubs" form="editform"></textarea>
                                     </div>
-                                    <label class="control-label" for="sports" >Activities/Sports:</label>
+                                    <label class="control-label" for="sports">Activities/Sports:</label>
                                     <div class="controls">
-                                        <textarea rows="2" cols="50"id="sports" name="sports" form="editform" value="{{ $data['student']->sports }}"></textarea>
+                                        <textarea rows="2" cols="50"id="sports" name="sports" form="editform"></textarea>
                                     </div>
                                     <label class="control-label" for="jobs">Jobs/Community Service:</label>
                                     <div class="controls">
-                                        <textarea rows="2" cols="50" id="jobs" name="jobs" form="editform" value="{{ $data['student']->jobs }}"></textarea>
+                                        <textarea rows="2" cols="50" id="jobs" name="jobs" form="editform"></textarea>
                                     </div>
                                     <label class="control-label" for="aspiration">Career Aspirations:</label>
                                     <div class="controls">
-                                        <textarea rows="2" cols="50" id="aspiration" name="aspiration" form="editform" value="{{ $data['student']->aspiration }}"></textarea>
+                                        <textarea rows="2" cols="50" id="aspiration" name="aspiration" form="editform"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +145,7 @@
                                 <div class="panel-body">
                                     <label class="control-label" for="champions">Champions:</label>
                                     <div class="controls">
-                                        <textarea rows="10" cols="50" id="champions" name="champions" form="editform" value="{{ $data['student']->champions }}"></textarea>
+                                        <textarea rows="10" cols="50" id="champions" name="champions" form="editform"></textarea>
                                     </div>
                                 </div>
                             </div>

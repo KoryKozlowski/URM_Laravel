@@ -16,7 +16,6 @@
 Route::get('student/dash', array('before' => 'auth|student', 'uses' => 'StudentsController@dash'));
 Route::get('student/show', array('before' => 'auth|student', 'uses' => 'StudentsController@show'));
 Route::get('student/edit', array('before' => 'auth|student', 'uses' => 'StudentsController@edit'));
-Route::get('student/password', array('before' => 'auth|student', 'uses' => 'StudentsController@password'));
 Route::resource('student', 'StudentsController');
 
 

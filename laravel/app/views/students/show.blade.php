@@ -56,14 +56,14 @@
                 <li class="sidebar-brand">
                 </li>
                 <br>
-                <li><a href="/student/dash"><i class="fa fa-lg fa-fw fa-home" id="icon"></i>Home</font></a></li>
+                <li><a href="/dash"><i class="fa fa-lg fa-fw fa-home" id="icon"></i>Home</font></a></li>
                 <li><a href="student-inbox.html"><i class="fa fa-lg fa-fw fa-inbox" id="icon"></i> Inbox</font></a></li>
                 <li class="active"><a href="/student/show"><i class="fa fa-lg fa-fw fa-picture-o" id="icon"></i>View Profile</font></a></li>
                 <li><a href="/student/edit"><i class="fa fa-lg fa-fw fa-pencil-square-o" id="icon"></i>Edit Profile</font></a></li>
                 <li><a href="student-addg.html"><i class="fa fa-lg fa-fw fa-check" id="icon"></i>Add Grades</font></a></li>
                 <li><a href="student-drop.html"><i class="fa fa-lg fa-fw fa-cloud-upload" id="icon"></i>Upload Documents</font></a></li>
                 <li><a href="student-search.html"><i class="fa fa-lg fa-fw fa-search" id="icon"></i>Search for Schools</font></a></li>
-                <li><a href="/student/password"><i class="fa fa-lg fa-fw fa-lock" id="icon"></i>Change Password</font></a></li>
+                <li><a href="/password"><i class="fa fa-lg fa-fw fa-lock" id="icon"></i>Change Password</font></a></li>
             </ul>
         </div>
 

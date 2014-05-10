@@ -106,17 +106,6 @@ class StudentsController extends \BaseController {
 		return Redirect::to('student/show');
 	}
 
-    public function password()
-    {
-        $student = Student::find(Auth::user()->role_id);
-        $user = User::findOrFail(Auth::user()->email);
-        $data = [
-            'student' => $student,
-            'user'    => $user
-        ];
-        return View::make('students.password')->with('data', $data);
-    }
-    
 	/**
 	 * Remove the specified resource from storage.
 	 *
